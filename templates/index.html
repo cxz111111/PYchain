@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html style="width:100%;height:100%" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>初始界面</title>
+</head>
+<body style="width:100%;height:100%;margin:0">
+<div style="width:50%;height:100%;float:left">
+    <div style="height:35%;margin:20px 0px 0px 100px">
+        <h1 >欢迎！！！</h1>
+        <div style="height:30%;">
+            <a href="/get_map"><input type="button" value="更新网络" style="width:80px;height:50px;margin:0px 20px 0px 0px"  ></a>
+            <a href="/consensus"><input type="button" value="更新链" style="width:80px;height:50px;margin:0px 20px 0px 0px"  ></a>
+            <a href="/receive_transaction"><input type="button" value="接受新交易" style="width:80px;height:50px;margin:0px 20px 0px 0px"  ></a>
+            <a href="/mine"><input type="button" value="挖矿" style="width:80px;height:50px;margin:0px 20px 0px 0px"  ></a>
+            <a href="/wallet"><input type="button" value="钱包" style="width:80px;height:50px;margin:0px 20px 0px 0px" </a>
+        </div>
+        <div>
+            <a href="/show_network"><input type="button"  style="width:100px;height:50px;margin:0px 30px 0px 0px" value="网络节点" ></a>
+            <a href="/show_transaction"><input type="button"  style="width:100px;height:50px;margin:0px 30px 0px 0px" value="交易池" ></a>
+        </div>
+    </div>
+    <div style="width:80%;height:30%;margin:0px 20px 50px 100px">
+        <textarea rows="10" disabled cols="20" style="font-size:20px; width:100%;height:100%">{% if log %}{{log}}{% endif %}</textarea>
+    </div>
+    <div style="width:80%;height:20%;margin:10px 20px 20px 100px">
+        <form action="transaction" method="post" enctype=multipart/form-data>
+            收款人: <input   type="text"  name="recipient"/>
+            &nbsp&nbsp&nbsp&nbsp&nbsp
+            交易金额: <input style="width:80px;"type="text" name="amount" placeholder="请输入数字"/>
+            &nbsp&nbsp&nbsp
+            <input type="submit" value="提交交易" />
+        </form>
+        <p></p>
+        <form action="register_nodes" method="post" enctype=multipart/form-data>
+            节点&nbsp&nbsp&nbsp: <input   type="text" name="node" placeholder="x.x.x.x:x，注意英文冒号"/>&nbsp&nbsp&nbsp
+            <input type="submit" value="注册节点" />
+        </form>
+    </div>
+</div>
+
+<div style="width:40%;height:80%;float:right;margin:5% 5% 2.5% ">
+        <textarea disabled rows="10" cols="40" style="width:100%;height:100%">
+            {% if chain %}
+            {% for i in chain %}
+                {{i}}
+            {% endfor %}
+            {% endif %}
+        </textarea>
+</div>
+</body>
+</html>
