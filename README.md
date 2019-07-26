@@ -2,11 +2,11 @@
 python搭建入门区块链，了解比特币背后的原理，  
 运行要求：    python 3.6+ 
 安装相关库：       
->>>hashlib库       `pip install hashlib`    
+* hashlib库       `pip install hashlib`    
 
->>>requests库      `pip install requests`     
+* requests库      `pip install requests`     
 
->>>Flsak库         `pip install Flask`  
+* Flsak库         `pip install Flask`  
 
 # 运行  
   
