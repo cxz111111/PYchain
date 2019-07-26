@@ -1,7 +1,11 @@
 # PYchain
-python搭建入门区块链，了解比特币背后的原理，  
-运行要求：    python 3.6+ 
+
+python搭建入门区块链，了解比特币背后的原理    
+
+运行要求：    python 3.6+  
+
 安装相关库：       
+
 * hashlib库       `pip install hashlib`    
 
 * requests库      `pip install requests`     
