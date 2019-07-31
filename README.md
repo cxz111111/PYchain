@@ -1,6 +1,6 @@
 # PYchain
 
-python搭建入门区块链，了解比特币背后的原理    
+python搭建入门区块链，了解比特币背后的原理，欢迎star！      
 
 运行要求：    python 3.6+  
 
