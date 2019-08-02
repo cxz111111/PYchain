@@ -23,3 +23,5 @@ python搭建入门区块链，了解比特币背后的原理，欢迎star！
 ![初始界面](img/0.png)  
  
 ![运行界面](img/1.png)   
+# 说明文档
+[说明文档]https://www.jianshu.com/p/ccd7ae8b46c6
